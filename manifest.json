@@ -1,0 +1,20 @@
+{
+  "name": "Skip advertising from Youtube",
+  "short_name": "Youtube ad skip",
+  "version": "0.0.0",
+  "manifest_version": 3,
+  "minimum_chrome_version": "89",
+  "description": "Instead of block youtube advertising, just skip!",
+  "homepage_url": "https://github.com/stephenapolinario/youtube-ad-skip",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file:///*"],
+      "js": ["inject.js"]
+    }
+  ]
+}

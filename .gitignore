@@ -1,0 +1,6 @@
+.DS_Store
+local
+
+# IntelliJ IDEA
+.idea/
+node_modules
